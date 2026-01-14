@@ -479,7 +479,46 @@ ul.dropdown-menu li {
 .course .card-body a h4:hover {
   color: #d82a2a;
 }
+.course .nav-pills .nav-link {
+  background: transparent;
+  border: 2px solid #d82a2a;
+  color: #d82a2a;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.course .nav-pills .nav-link h5 {
+  color: #d82a2a;
+  transition: all 0.3s ease;
+}
+.course .nav-pills .nav-link:hover {
+  background: rgba(216, 42, 42, 0.1);
+  transform: translateY(-3px);
+}
+.course .nav-pills .nav-link.active {
+  background: #d82a2a;
+  color: #fff !important;
+  box-shadow: 0 10px 30px rgba(216, 42, 42, 0.3);
+}
+.course .nav-pills .nav-link.active h5 {
+  color: #fff !important;
+}
+.course .tab-content {
+  animation: fadeIn 0.5s ease-in;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .course-widget li a {
   color: #232323;
   opacity: 0.9;

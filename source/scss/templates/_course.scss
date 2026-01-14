@@ -9,6 +9,55 @@
 			color: $primary-color;
 		}
 	}
+
+	// Tab styles for club selection
+	.nav-pills {
+		.nav-link {
+			background: transparent;
+			border: 2px solid $primary-color;
+			color: $primary-color;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			border-radius: 50px;
+			transition: all 0.3s ease;
+
+			h5 {
+				color: $primary-color;
+				transition: all 0.3s ease;
+			}
+
+			&:hover {
+				background: rgba($primary-color, 0.1);
+				transform: translateY(-3px);
+			}
+
+			&.active {
+				background: $primary-color;
+				color: $light !important;
+				box-shadow: 0 10px 30px rgba($primary-color, 0.3);
+
+				h5 {
+					color: $light !important;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		animation: fadeIn 0.5s ease-in;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .course-widget{
