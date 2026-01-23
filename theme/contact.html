@@ -97,9 +97,9 @@
           <ul class="list-inline mb-0">
             <li class="list-inline-item"><a href="index.html" class="text-sm letter-spacing text-white text-uppercase font-weight-bold">Home</a></li>
             <li class="list-inline-item"><span class="text-white">|</span></li>
-            <li class="list-inline-item"><a href="#" class="text-color text-uppercase text-sm letter-spacing">contact</a></li>
+            <li class="list-inline-item"><a href="#" class="text-color text-uppercase text-sm letter-spacing">liên hệ</a></li>
           </ul>
-           <h1 class="text-lg text-white mt-2">Contact Us</h1>
+           <h1 class="text-lg text-white mt-2">Liên hệ chúng tôi</h1>
       </div>
     </div>
   </div>
@@ -113,40 +113,71 @@
       <div class="col-lg-8 text-center">
         <div class="section-title">
           <div class="divider mb-3"></div>
-          <h2>Contact Us</h2>
-          <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In error reprehenderit
-            quam enim obcaecati, repudiandae officia a cumque nemo provident!</p>
+          <h2>Đăng ký ngay</h2>
+          <p class="mt-3">Đăng ký ngay để nhận buổi tập miễn phí tại TVN GROUP
         </div>
       </div>
     </div>
 
     <div class="row justify-content-center pb-5">
-      <div class="col-lg-9 text-center">
+      <div class="col-lg-7 text-center">
         <form id="contact-form">
           <div class="form-row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="form-group">
-                <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+                <input name="user_name" type="text" class="form-control" placeholder="Họ và tên">
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="form-group">
-                <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+                <input name="user_phone" type="tel" class="form-control" placeholder="Số điện thoại">
               </div>
             </div>
 
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="form-group-2">
-                <textarea name="user_message" class="form-control" rows="8" placeholder="Your Message"></textarea>
+              <div class="form-group text-left">
+                <label class="d-block mb-3 font-weight-bold">Chọn khung giờ:</label>
+                <div class="row">
+                  <div class="col-6 col-md-3 mb-2">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="time1" name="time_slot" value="8:30 AM">
+                      <label class="custom-control-label" for="time1">8:30 AM</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-2">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="time2" name="time_slot" value="9:45 AM">
+                      <label class="custom-control-label" for="time2">9:45 AM</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-2">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="time3" name="time_slot" value="6:15 PM">
+                      <label class="custom-control-label" for="time3">6:15 PM</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 mb-2">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="time4" name="time_slot" value="7:15 PM">
+                      <label class="custom-control-label" for="time4">7:15 PM</label>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <!-- <div class="form-group-2">
+                <textarea name="user_message" class="form-control" rows="8" placeholder="Ghi chú thêm (tùy chọn)"></textarea>
+              </div> -->
 
               <div class="text-center">
-                <button class="btn btn-main mt-3 " type="submit">Send Message</button>
+                <button class="btn btn-main mt-3 " type="submit">Đăng ký ngay</button>
               </div>
             </div>
           </div>
-          <div class="error" id="error">Sorry Msg dose not sent</div>
-          <div class="success" id="success">Message Sent</div>
+          <div class="error" id="error">Xin lỗi, không gửi được</div>
+          <div class="success" id="success">Đã gửi thành công!</div>
         </form>
       </div>
     </div>
@@ -156,19 +187,49 @@
     <div class="map" id="map_canvas" data-latitude="16.0542377" data-longitude="108.2342069"
       data-marker="images/marker.png"></div>
   </div> -->
-  <a href="https://www.google.com/maps/place/1195+Ng.+Quy%E1%BB%81n,+An+H%E1%BA%A3i+%C4%90%C3%B4ng,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@16.0542377,108.2342069,17z/data=!3m1!4b1!4m6!3m5!1s0x314219d7cc64edbd:0xc808b600ce00e02e!8m2!3d16.0542377!4d108.2367818!16s%2Fg%2F11hdspv3v8?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-    <div style="width: 100%; position: relative; overflow: hidden; cursor: pointer;">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.088827725515!2d108.21727637597521!3d16.00879498466187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a1006540195%3A0xe545230919246101!2zVHLGsMahbmcgVOG7iyBOaOG6rXQgTU1B!5e0!3m2!1svi!2s!4v1715234567890!5m2!1svi!2s" 
-        width="100%" 
-        height="500" 
-        style="border:0; pointer-events: none;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
-  </a>
+  
+  <!-- Google Maps Section - 2 Locations Side by Side -->
+  <div class="mt-5 mb-5">
+    <div class="container-fluid px-0">
+      <div class="row no-gutters">
+        <!-- Map 1: CS1 - 10-12 Nguyễn Mậu Tài -->
+        <div class="col-lg-6 col-md-12 pr-lg-2 mb-4 mb-lg-0">
+          <h4 class="text-center mb-3 font-weight-bold">CS1: 10-12 Nguyễn Mậu Tài, Hòa Xuân</h4>
+          <a href="https://www.google.com/maps/place/10-12+Nguy%E1%BB%85n+M%E1%BA%ADu+T%C3%A0i,+H%C3%B2a+Xu%C3%A2n,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng" target="_blank">
+            <div style="width: 100%; position: relative; overflow: hidden; cursor: pointer;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5!2d108.2!3d16.054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDAzJzE1LjYiTiAxMDjCsDEyJzAwLjAiRQ!5e0!3m2!1svi!2s!4v1715234567890!5m2!1svi!2s" 
+                width="100%" 
+                height="500" 
+                style="border:0; pointer-events: none;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </a>
+        </div>
+
+        <!-- Map 2: CS2 - 1195 Ngô Quyền -->
+        <div class="col-lg-6 col-md-12 pl-lg-2">
+          <h4 class="text-center mb-3 font-weight-bold">CS2: 1195 Ngô Quyền, Sơn Trà</h4>
+          <a href="https://www.google.com/maps/place/1195+Ng.+Quy%E1%BB%81n,+An+H%E1%BA%A3i+%C4%90%C3%B4ng,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@16.0542377,108.2342069,17z/data=!3m1!4b1!4m6!3m5!1s0x314219d7cc64edbd:0xc808b600ce00e02e!8m2!3d16.0542377!4d108.2367818!16s%2Fg%2F11hdspv3v8?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <div style="width: 100%; position: relative; overflow: hidden; cursor: pointer;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.088827725515!2d108.21727637597521!3d16.00879498466187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a1006540195%3A0xe545230919246101!2zVHLGsMahbmcgVOG7iyBOaOG6rXQgTU1B!5e0!3m2!1svi!2s!4v1715234567890!5m2!1svi!2s" 
+                width="100%" 
+                height="500" 
+                style="border:0; pointer-events: none;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -178,9 +239,11 @@
         <div class="card rounded-0 border-0 shadow-sm text-center py-5 px-4 contact-info">
           <i class="ti-mobile mb-3 text-lg text-color"></i>
           <span>hotline</span>
-          <p class="lead text-black mb-0 mt-3"> 0905 672 898</p>
-          <p class="lead">8:30 am - 11 am </p>
-          <p class="lead">3 pm - 8:30 pm </p>
+          <p class="lead " style="font-size: 17px;"> 0905 672 898</p>
+          <p class="lead" style="font-size: 17px;">8:30 am - 11 am </p>
+          <p class="lead" style="font-size: 17px;">3 pm - 8:30 pm </p>
+          <br>
+          
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
@@ -190,6 +253,10 @@
           <p class="lead text-black mt-3 mb-0" style="font-size: 17px;">thechangemmadn25@gmail.com </p>
           <br>
           <p class="lead text-black" style="font-size: 16px;">nguyenthikieutrinh204@gmail.com </p>
+          <br>
+          <br>
+          
+
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
