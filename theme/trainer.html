@@ -350,6 +350,78 @@
 
    <script src="js/script.js"></script>
 
+   <!-- Google Sheets Form Submission Script -->
+   <script>
+     // Đợi jQuery load xong
+     $(document).ready(function() {
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbzxKjcJrpdZQSBzY4xoMYns8IA8VD-C-QyNKRaKCVc1tbDtcHbylEFnnz8hSzPeIDn8Zw/exec';
+       const form = document.forms['contact-form'];
+       const btnSubmit = document.querySelector('.btn-main');
+       const successMsg = document.getElementById('success');
+       const errorMsg = document.getElementById('error');
+
+       // Ẩn thông báo mặc định
+       if(successMsg) successMsg.style.display = 'none';
+       if(errorMsg) errorMsg.style.display = 'none';
+
+       if(form) {
+         // Ngăn chặn submit mặc định bằng jQuery
+         $(form).off('submit').on('submit', function(e) {
+           e.preventDefault();
+           e.stopImmediatePropagation();
+           
+           // Lấy tất cả checkbox được chọn
+           const checkboxes = form.querySelectorAll('input[name="time_slot"]:checked');
+           const selectedTimes = Array.from(checkboxes).map(cb => cb.value).join(', ');
+           
+           // Tạo FormData
+           const formData = new FormData(form);
+           // Thêm khung giờ đã chọn
+           formData.append('time_slots', selectedTimes);
+           
+           // Hiệu ứng nút đang gửi
+           const originalBtnText = btnSubmit.innerHTML;
+           btnSubmit.innerHTML = 'Đang gửi...';
+           btnSubmit.disabled = true;
+
+           // Ẩn thông báo cũ
+           if(successMsg) successMsg.style.display = 'none';
+           if(errorMsg) errorMsg.style.display = 'none';
+
+           fetch(scriptURL, { method: 'POST', body: formData })
+             .then(response => {
+               // Hiển thị thông báo thành công
+               if(successMsg) {
+                 successMsg.style.display = 'block';
+                 successMsg.style.color = 'green';
+               }
+               form.reset(); // Xóa form
+               console.log('Success!', response);
+               
+               // Khôi phục nút
+               setTimeout(() => {
+                 btnSubmit.innerHTML = originalBtnText;
+                 btnSubmit.disabled = false;
+                 if(successMsg) successMsg.style.display = 'none';
+               }, 3000);
+             })
+             .catch(error => {
+               // Hiển thị thông báo lỗi
+               if(errorMsg) {
+                 errorMsg.style.display = 'block';
+                 errorMsg.style.color = 'red';
+               }
+               console.error('Error!', error.message);
+               
+               // Khôi phục nút
+               btnSubmit.innerHTML = originalBtnText;
+               btnSubmit.disabled = false;
+             });
+         });
+       }
+     });
+   </script>
+
    </body>
 
    </html>
