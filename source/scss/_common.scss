@@ -146,6 +146,7 @@ input[type="email"],input[type="password"],input[type="text"],input[type="tel"]{
 
 .section {
   padding:100px 0;
+  background: #fff;
 }
 
 
@@ -156,9 +157,15 @@ input[type="email"],input[type="password"],input[type="text"],input[type="tel"]{
   font-size: 50px;
   line-height: 50px;
  }
+  
+  h2 {
+    color: #232323 !important;
+    font-weight: 700 !important;
+  }
+
   p {
-      color: #666;
-      font-family:$secondary-font;
+    color: #666 !important;
+    font-family: $secondary-font;
   }
 }
 
@@ -166,7 +173,71 @@ input[type="email"],input[type="password"],input[type="text"],input[type="tel"]{
 
 .page-title{
   padding: 155px 0 100px;
-  @extend .overly-2;
+  background: url("../images/bg/bg-72.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 1;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+}
+
+/* Responsive Page Title */
+@media (max-width: 992px) {
+  .page-title {
+    padding: 120px 20px;
+    min-height: 350px;
+  }
+
+  .page-title h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    padding: 100px 15px;
+    min-height: 320px;
+    background-attachment: scroll;
+  }
+
+  .page-title h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    padding: 80px 12px;
+    min-height: 280px;
+    background-position: center 30%;
+  }
+
+  .page-title h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 
