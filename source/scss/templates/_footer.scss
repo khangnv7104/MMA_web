@@ -50,3 +50,39 @@
 		padding-left: 10px;
 	}
 }
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  
+  .footer-menu li a,
+  .recent-blog a,
+  .footer p {
+    font-size: 13px;
+  }
+  
+  .lh-40 {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-menu li a,
+  .recent-blog a,
+  .footer p {
+    font-size: 12px;
+  }
+  
+  .footer-socials li a {
+    font-size: 16px;
+    padding-left: 8px;
+  }
+}

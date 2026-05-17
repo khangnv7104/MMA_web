@@ -66,3 +66,62 @@
 		opacity: .9;
 	}
 }
+
+/* Responsive Course Cards */
+@media (max-width: 768px) {
+	.course .nav-pills {
+		.nav-link {
+			padding: 10px 15px;
+			font-size: 13px;
+			letter-spacing: 0.5px;
+			margin-bottom: 10px;
+		}
+
+		h5 {
+			font-size: 14px;
+		}
+	}
+
+	.course .card {
+		margin-bottom: 20px;
+	}
+
+	.course .card-body {
+		padding: 15px;
+	}
+
+	.course .card-body h4 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.course .nav-pills {
+		.nav-link {
+			padding: 8px 12px;
+			font-size: 12px;
+			letter-spacing: 0px;
+			margin-bottom: 8px;
+		}
+
+		h5 {
+			font-size: 12px;
+		}
+	}
+
+	.course .card {
+		margin-bottom: 15px;
+	}
+
+	.course .card-body {
+		padding: 12px;
+	}
+
+	.course .card-body h4 {
+		font-size: 14px;
+	}
+
+	.course .card-body p {
+		font-size: 12px;
+	}
+}

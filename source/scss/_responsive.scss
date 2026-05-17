@@ -1,8 +1,33 @@
 /*=== MEDIA QUERY ===*/
 
-
+/* Ultra Mobile - Extra Small (320px - 400px) */
 @include mobile-xs{
- .dropdown-menu {
+  /* Typography */
+  h1, .h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  h2, .h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  h3, .h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h4, .h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar */
+  .navbar-brand img {
+    height: 50px !important;
+  }
+  .dropdown-menu {
       display: none;
       width: 100%;
       text-align: center;
@@ -10,74 +35,235 @@
   .navbar-nav li{
       padding: 0px;
   }
-}
-@include mobile{
-  .slider h1 {
-      font-size: 40px;
-      line-height: 48px;
+  .navbar-nav {
+    margin-top: 15px;
   }
 
+  /* Sections & Containers */
+  .section {
+    padding: 40px 0;
+  }
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  /* Cards */
+  .card {
+    margin-bottom: 15px;
+  }
+  .card-body, .card > div[class*="p-"] {
+    padding: 15px !important;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 12px 20px;
+    font-size: 12px;
+    height: auto;
+    min-height: 44px;
+  }
+  
+  /* Forms */
+  input[type=email], input[type=password], input[type=text], input[type=tel] {
+    height: 44px;
+    font-size: 16px;
+  }
+  
+  /* Text utilities */
   .text-lg {
-      font-size: 28px;
-      line-height: 38px;
-    }
-
-    .lead {
-      font-size: 1rem;
-    }
-
-    .media{
-      display: block;
-    }
-
-    .media-body{
-      margin-top: 20px;
-    }
-
-    .number {
-      font-size: 50px;
-      line-height: 65px;
-    }
-
-    
-    .dropdown-menu {
-      display: none;
-      text-align: center;
+    font-size: 18px;
   }
-
-.navbar-nav li{
-      padding: 0px;
+  .lead {
+    font-size: 14px;
   }
-
+  .number {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
-@include tablet{
+
+/* Small Mobile (400px - 480px) */
+@include mobile{
+  /* Typography */
+  h1, .h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  h2, .h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  h3, .h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  h4, .h4 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar */
+  .navbar-brand img {
+    height: 60px !important;
+  }
+  .ml-lg-4 {
+    margin-left: 0 !important;
+  }
+  .navbar-collapse {
+    padding-top: 15px;
+  }
+  .dropdown-menu {
+    display: none;
+    text-align: center;
+  }
+  .navbar-nav li{
+    padding: 0px;
+  }
+
+  /* Hero Section */
+  .slider h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .slider {
+    padding: 80px 15px !important;
+  }
+
+  /* Text utilities */
+  .text-lg {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .lead {
+    font-size: 14px;
+  }
+  .number {
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 50px 0;
+  }
+  
+  /* Cards */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 14px 25px;
+    font-size: 13px;
+    min-height: 44px;
+  }
+
+  /* Forms */
+  input[type=email], input[type=password], input[type=text], input[type=tel] {
+    height: 44px;
+  }
+
+  /* Media elements */
   .media{
-      display: block;
-    }
-
-    .media-body{
-      margin-top: 20px;
-    }
-    .services .media img{
-      width: 100%!important;
-    }
-    
-    .dropdown-menu {
-      display: none;
-      text-align: center;
+    display: block;
   }
- .navbar-nav li{
-      padding: 0px;
+  .media-body{
+    margin-top: 20px;
   }
-
 }
+
+/* Tablet (480px - 768px) */
+@include tablet{
+  /* Typography */
+  h1, .h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  h2, .h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  h3, .h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body {
+    font-size: 15px;
+  }
+
+  /* Navbar */
+  .ml-lg-4 {
+    margin-left: 0 !important;
+  }
+
+  /* Sections */
+  .section {
+    padding: 60px 15px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Cards - better spacing */
+  .card {
+    margin-bottom: 25px;
+  }
+
+  /* Media elements */
+  .media{
+    display: block;
+  }
+  .media-body{
+    margin-top: 20px;
+  }
+  .services .media img{
+    width: 100%!important;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    text-align: center;
+  }
+  .navbar-nav li{
+    padding: 0px;
+  }
+
+  /* Column overrides for better tablet layout */
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Desktop (768px - 992px) */
 @include desktop{
   .navbar-nav .dropdown-menu{
     // display: block;
   }
+  
+  /* Better spacing on desktop */
+  .section {
+    padding: 80px 0;
+  }
 }
+
+/* Large Desktop (992px - 1200px) */
 @include large-desktop{
    .navbar-nav .dropdown-menu{
     // display: block;
+  }
+   
+  .section {
+    padding: 80px 0;
   }
 }

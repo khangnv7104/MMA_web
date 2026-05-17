@@ -3,3 +3,31 @@
 	background-size: cover;
 	@extend .overly-2;
 }
+
+/* Responsive CTA */
+@media (max-width: 768px) {
+	.cta {
+		padding: 60px 15px !important;
+	}
+
+	.cta .text-lg {
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+
+@media (max-width: 480px) {
+	.cta {
+		padding: 40px 15px !important;
+	}
+
+	.cta .text-lg {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.cta h2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}

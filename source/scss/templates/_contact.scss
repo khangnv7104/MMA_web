@@ -6,3 +6,79 @@
 .mt--170{
 	margin-top: -170px;
 }
+
+/* Responsive Contact Form */
+@media (max-width: 768px) {
+	.map {
+		height: 350px;
+	}
+
+	.mt--170 {
+		margin-top: -100px;
+	}
+
+	.contact-form .form-control {
+		font-size: 14px;
+		height: 42px;
+	}
+
+	.contact-form .form-group {
+		margin-bottom: 15px;
+	}
+
+	.contact-info {
+		margin-bottom: 20px;
+	}
+
+	.col-lg-6.pl-lg-2 {
+		padding-left: 15px !important;
+	}
+
+	.col-lg-6.pr-lg-2 {
+		padding-right: 15px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.map {
+		height: 250px;
+	}
+
+	.mt--170 {
+		margin-top: -50px;
+	}
+
+	.contact-form .form-control {
+		font-size: 13px;
+		height: 40px;
+		padding: 8px 12px;
+	}
+
+	.contact-form .form-group {
+		margin-bottom: 12px;
+	}
+
+	.contact-info {
+		margin-bottom: 15px;
+		padding: 15px 12px !important;
+	}
+
+	.contact-info i {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+
+	.contact-info .lead {
+		font-size: 14px !important;
+	}
+
+	.custom-control-label {
+		font-size: 12px;
+	}
+
+	.col-lg-6.pl-lg-2,
+	.col-lg-6.pr-lg-2 {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+}

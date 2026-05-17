@@ -89,3 +89,45 @@
 	width: 45px;
 	height: 4px;
 }
+
+/* Responsive Team */
+@media (max-width: 768px) {
+	.team-item .card-body {
+		margin-top: -80px;
+	}
+
+	.overlay-content {
+		padding: 15px;
+	}
+
+	.team-wrap ul li a {
+		width: 36px;
+		height: 36px;
+		font-size: 14px;
+		padding-top: 5px;
+	}
+}
+
+@media (max-width: 480px) {
+	.team-item .card-body {
+		margin-top: -50px;
+		padding: 12px;
+	}
+
+	.overlay-content {
+		padding: 10px;
+		top: 50%;
+	}
+
+	.team-wrap ul li a {
+		width: 32px;
+		height: 32px;
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.team-wrap .card-subtitle:after {
+		max-width: 20px;
+		margin-top: 15px;
+	}
+}

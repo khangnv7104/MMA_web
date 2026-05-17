@@ -24,3 +24,44 @@
     outline: none;
   }
 }
+
+/* Responsive Testimonial */
+@media (max-width: 768px) {
+	.textimonial {
+		padding: 60px 15px !important;
+	}
+
+	.w-40 {
+		width: 60%;
+	}
+
+	.testimonial-slider h3 {
+		font-size: 22px;
+	}
+
+	.testimonial-slider p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 480px) {
+	.textimonial {
+		padding: 40px 15px !important;
+	}
+
+	.w-40 {
+		width: 80%;
+	}
+
+	.testimonial-slider h3 {
+		font-size: 18px;
+	}
+
+	.testimonial-slider p {
+		font-size: 12px;
+	}
+
+	.slick-dots li button::before {
+		font-size: 8px;
+	}
+}
