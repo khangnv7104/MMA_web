@@ -36,9 +36,11 @@
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
+
+<!-- Language Switcher Script -->
+<script src="js/language-switcher.js" defer></script>
 
 
 <style>
@@ -69,18 +71,18 @@ body {
 		<div class="collapse text-center navbar-collapse" id="navbarsid">
 			<ul class="navbar-nav mx-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="index.html"><span data-i18n="nav.home">Trang chủ</span> <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Về chúng tôi </a>
+						aria-expanded="false"><span data-i18n="nav.about">Về chúng tôi</span> </a>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="about.html">Giới thiệu</a></li>
 						<li><a class="dropdown-item" href="trainer.html">Huấn luyện viên</a></li>
 						<li><a class="dropdown-item" href="course.html">Khóa học</a></li>
 					</ul>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="service.html">Dịch vụ</a></li>
+				<li class="nav-item"><a class="nav-link" href="service.html"><span data-i18n="nav.services">Dịch vụ</span></a></li>
 				<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Memebership</a></li> -->
 				<li class="nav-item dropdown">
 					<!-- <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
@@ -91,7 +93,7 @@ body {
 						<li><a class="dropdown-item" href="blog-single.html">Blog Details</a></li>
 					</ul>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+				<li class="nav-item"><a class="nav-link" href="contact.html"><span data-i18n="nav.contact">Liên hệ</span></a></li>
 			</ul>
 			<div class="my-md-0 ml-lg-4 mt-4 mt-lg-0 ml-auto text-lg-right mb-3 mb-lg-0">
 				<a href="tel:+23-345-67890">
@@ -114,13 +116,13 @@ body {
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				<span class="h6 d-inline-block mb-4 subhead text-uppercase">Gym fitness club</span> <br> <br> 
-				<h1 class="text-uppercase text-white mb-5">Chinh phục  <br> 
+				<span class="h6 d-inline-block mb-4 subhead text-uppercase" data-i18n="hero.subtitle">Gym fitness club</span> <br> <br> 
+				<h1 class="text-uppercase text-white mb-5" data-i18n="hero.title">Chinh phục  <br> 
 					<span class="text-color">Thử thách mới</span>
 					<br>cùng TVN GROUP</h1>
 					<br>
 			
-				<a href="course.html"  class="btn btn-main " >Tham gia <i class="ti-angle-right ml-3"></i></a>
+				<a href="course.html"  class="btn btn-main " data-i18n="hero.cta">Tham gia <i class="ti-angle-right ml-3"></i></a>
 			</div>
 		</div>
 	</div>
@@ -134,26 +136,26 @@ body {
 			<div class="col-lg-4 col-md-6">
 				<div class="card p-5 border-0 rounded-top border-bottom position-relative hover-style-1">
 					<span class="number">01</span>
-					<h3 class="mt-3">Trang thiết bị hiện đại</h3>
-					<p class="mt-3 mb-4">Không gian được thiết kế gọn gàng, trang bị thiết bị chất lượng, phục vụ linh hoạt cho nhiều hình thức tập luyện.</p>
-					<a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>Xem thêm</a>
+					<h3 class="mt-3" data-i18n="intro.equipmentTitle">Trang thiết bị hiện đại</h3>
+					<p class="mt-3 mb-4" data-i18n="intro.equipmentDesc">Không gian được thiết kế gọn gàng, trang bị thiết bị chất lượng, phục vụ linh hoạt cho nhiều hình thức tập luyện.</p>
+					<a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold" data-i18n="intro.learnMore"><i class="ti-minus mr-2 "></i>Xem thêm</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="card p-5 border-0 rounded-top hover-style-1">
 					<span class="number">02</span>
-					<h3 class="mt-3">Huấn luyện viên chuyên nghiệp</h3>
-					<p class="mt-3 mb-4">Huấn luyện viên tận tâm, kỷ luật và am hiểu võ thuật, đồng hành cùng bạn trong suốt quá trình tập luyện.</p>
-					<a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>Xem thêm</a>
+					<h3 class="mt-3" data-i18n="intro.coachTitle">Huấn luyện viên chuyên nghiệp</h3>
+					<p class="mt-3 mb-4" data-i18n="intro.coachDesc">Huấn luyện viên tận tâm, kỷ luật và am hiểu võ thuật, đồng hành cùng bạn trong suốt quá trình tập luyện.</p>
+					<a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold" data-i18n="intro.learnMore"><i class="ti-minus mr-2 "></i>Xem thêm</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="card p-5 border-0 rounded-top hover-style-1">
 					<span class="number">03</span>
-					<h3 class="mt-3">Chế độ dinh dưỡng lành mạnh</h3>
-					<p class="mt-3 mb-4">Dinh dưỡng khoa học, đồng hành cùng quá trình tập luyện bền vững.</p>
+					<h3 class="mt-3" data-i18n="intro.nutritionTitle">Chế độ dinh dưỡng lành mạnh</h3>
+					<p class="mt-3 mb-4" data-i18n="intro.nutritionDesc">Dinh dưỡng khoa học, đồng hành cùng quá trình tập luyện bền vững.</p>
 					<br>
-					<a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>Xem thêm</a>
+					<a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold" data-i18n="intro.learnMore"><i class="ti-minus mr-2 "></i>Xem thêm</a>
 				</div>
 			</div>
 		</div>
@@ -191,13 +193,13 @@ body {
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-12 col-sm-12">
 				<div class="text-center">
-					<span class="h6 letter-spacing text-white">Khám phá tiềm năng của bạn</span>
-					<h2 class="text-lg mt-4 mb-5 text-white">
+					<span class="h6 letter-spacing text-white" data-i18n="cta.subhead">Khám phá tiềm năng của bạn</span>
+					<h2 class="text-lg mt-4 mb-5 text-white" data-i18n="cta.title">
 						Nhanh tay đăng ký để nhận ngay buổi tập
 						 <span class="text-color">miễn phí </span>
 					</h2>
 
-					<a href="contact.html" class="btn btn-main text-white">Tham gia ngay</a>
+					<a href="contact.html" class="btn btn-main text-white" data-i18n="cta.button">Tham gia ngay</a>
 				</div>
 			</div>
 		</div>
@@ -212,8 +214,8 @@ body {
 			<div class="col-lg-8 text-center">
 				<div class="section-title">
 					<div class="divider mb-3"></div>
-					<h2 >Dịch vụ của chúng tôi</h2>
-					<p>Hơn 20 buổi tập nhóm mỗi tuần, từ các lớp kỹ năng đến các lớp rèn luyện sức bền và thể lực.</p>
+					<h2 data-i18n="services.title">Dịch vụ của chúng tôi</h2>
+					<p data-i18n="services.description">Hơn 20 buổi tập nhóm mỗi tuần, từ các lớp kỹ năng đến các lớp rèn luyện sức bền và thể lực.</p>
 				</div>
 			</div>
 		</div>
@@ -222,43 +224,43 @@ body {
 			<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
 				<div class="text-center px-4 py-5 hover-style-1" style="background-color: white; border-radius: 5px; border: 2px solid #e0e0e0;">
 					<i class="icofont-hand-power text-lg text-color"></i>
-					<h4 class="mt-3 mb-4 text-uppercase">MMA Training</h4>
-					<p> Rèn luyện toàn diện kỹ thuật, sức bền và bản lĩnh thi đấu.</p>
+					<h4 class="mt-3 mb-4 text-uppercase" data-i18n="services.mmaTraining">MMA Training</h4>
+					<p data-i18n="services.mmaDesc"> Rèn luyện toàn diện kỹ thuật, sức bền và bản lĩnh thi đấu.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
 				<div class="text-center px-4 py-5 hover-style-1" style="background-color: white; border-radius: 5px; border: 2px solid #e0e0e0;">
 					<i class="icofont-hand-thunder text-lg text-color"></i>
-					<h4 class="mt-3 mb-4 text-uppercase">Boxing & Striking</h4>
-					<p>Phát triển tốc độ, phản xạ và sức mạnh đòn đánh.</p>
+					<h4 class="mt-3 mb-4 text-uppercase" data-i18n="services.boxing">Boxing & Striking</h4>
+					<p data-i18n="services.boxingDesc">Phát triển tốc độ, phản xạ và sức mạnh đòn đánh.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
 				<div class="text-center px-4 py-5 hover-style-1" style="background-color: white; border-radius: 5px; border: 2px solid #e0e0e0;">
 					<i class="icofont-leg text-lg text-color"></i>
-					<h4 class="mt-3 mb-4 text-uppercase">Muay Thai</h4>
-					<p>Tôi luyện thể lực và kỷ luật qua từng cú ra đòn.</p>
+					<h4 class="mt-3 mb-4 text-uppercase" data-i18n="services.muayThai">Muay Thai</h4>
+					<p data-i18n="services.muayDesc">Tôi luyện thể lực và kỷ luật qua từng cú ra đòn.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
 				<div class="text-center px-4 py-5 hover-style-1" style="background-color: white; border-radius: 5px; border: 2px solid #e0e0e0;">
 					<i class="icofont-muscle text-lg text-color"></i>
-					<h4 class="mt-3 mb-4 text-uppercase">Strength & Conditioning</h4>
-					<p>Xây dựng nền tảng sức mạnh cho võ thuật và thi đấu.</p>
+					<h4 class="mt-3 mb-4 text-uppercase" data-i18n="services.strength">Strength & Conditioning</h4>
+					<p data-i18n="services.strengthDesc">Xây dựng nền tảng sức mạnh cho võ thuật và thi đấu.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
 				<div class="text-center px-4 py-5 hover-style-1" style="background-color: white; border-radius: 5px; border: 2px solid #e0e0e0;">
 					<i class="icofont-gym-alt-2 text-lg text-color"></i>
-					<h4 class="mt-3 mb-4 text-uppercase">Weight Training</h4>
-					<p>Gia tăng sức mạnh cốt lõi, hỗ trợ hiệu suất tập luyện.</p>
+					<h4 class="mt-3 mb-4 text-uppercase" data-i18n="services.weightTraining">Weight Training</h4>
+					<p data-i18n="services.weightDesc">Gia tăng sức mạnh cốt lõi, hỗ trợ hiệu suất tập luyện.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 mb-4">
 				<div class="text-center px-4 py-5 hover-style-1" style="background-color: white; border-radius: 5px; border: 2px solid #e0e0e0;">
 					<i class="icofont-shield  text-lg text-color"></i>
-					<h4 class="mt-3 mb-4 text-uppercase">Fight Conditioning</h4>
-					<p>Nâng cao thể lực thực chiến và khả năng chịu đựng.</p>
+					<h4 class="mt-3 mb-4 text-uppercase" data-i18n="services.fightConditioning">Fight Conditioning</h4>
+					<p data-i18n="services.fightDesc">Nâng cao thể lực thực chiến và khả năng chịu đựng.</p>
 				</div>
 			</div>
 		</div>
@@ -506,8 +508,10 @@ body {
 					<h4 class="mb-4 text-white letter-spacing text-uppercase">Địa chỉ</h4>
 					<p>CS1: 10-12 Nguyễn Mậu Tài, Hòa Xuân,TP  Đà Nẵng</p>
 					<p>CS2: 1195 Ngô Quyền, Sơn Trà, TP Đà Nẵng </p>
-					<span class="text-white">0905 672 898</span>
+					<span class="text-white">0905 672 898</span>  <br>
+					<span class="text-white">078 586 5789</span>
 					<span class="text-white">thechangemmadn25@gmail.com</span>
+					<span class="text-white">jpmma.dn@gmail.com	</span>
 				</div>
 			</div>
 		</div>

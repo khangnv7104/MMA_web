@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "TRANG CHỦ",
+    "about": "VỀ CHÚNG TÔI",
+    "services": "DỊCH VỤ",
+    "courses": "KHÓA HỌC",
+    "blog": "BLOG",
+    "contact": "LIÊN HỆ"
+  },
+  "hero": {
+    "title": "ĐẠT ĐƯỢC MỤC TIÊU CỦA BẠN",
+    "subtitle": "Phòng tập GYM hiện đại với thiết bị tốt nhất",
+    "cta": "THAM GIA"
+  },
+  "intro": {
+    "equipmentTitle": "Trang thiết bị hiện đại",
+    "equipmentDesc": "Không gian được thiết kế gọn gàng, trang bị thiết bị chất lượng, phục vụ linh hoạt cho nhiều hình thức tập luyện.",
+    "coachTitle": "Huấn luyện viên chuyên nghiệp",
+    "coachDesc": "Huấn luyện viên tận tâm, kỷ luật và am hiểu võ thuật, đồng hành cùng bạn trong suốt quá trình tập luyện.",
+    "nutritionTitle": "Chế độ dinh dưỡng lành mạnh",
+    "nutritionDesc": "Dinh dưỡng khoa học, đồng hành cùng quá trình tập luyện bền vững.",
+    "learnMore": "Xem thêm"
+  },
+  "cta": {
+    "subhead": "Khám phá tiềm năng của bạn",
+    "title": "Nhanh tay đăng ký để nhận ngay buổi tập miễn phí",
+    "button": "Tham gia ngay"
+  },
+  "services": {
+    "title": "DỊCH VỤ CỦA CHÚNG TÔI",
+    "description": "Hơn 20 buổi tập nhóm mỗi tuần, từ các lớp kỹ năng đến các lớp rèn luyện sức bền và thể lực.",
+    "mmaTraining": "MMA TRAINING",
+    "mmaDesc": "Rèn luyện toàn diện kỹ thuật, sức bền và bản lĩnh thi đấu.",
+    "boxing": "BOXING & STRIKING",
+    "boxingDesc": "Phát triển tốc độ, phản xạ và sức mạnh đòn đánh.",
+    "muayThai": "MUAY THAI",
+    "muayDesc": "Tôi luyện thể lực và kỷ luật qua từng cú ra đòn.",
+    "strength": "STRENGTH & CONDITIONING",
+    "strengthDesc": "Xây dựng nền tảng sức mạnh cho võ thuật và thi đấu.",
+    "weightTraining": "WEIGHT TRAINING",
+    "weightDesc": "Gia tăng sức mạnh cốt lõi, hỗ trợ hiệu suất tập luyện.",
+    "fightConditioning": "FIGHT CONDITIONING",
+    "fightDesc": "Nâng cao thể lực thực chiến và khả năng chịu đựng."
+  },
+  "courses": {
+    "title": "CÁC KHÓA HỌC"
+  },
+  "contact": {
+    "title": "LIÊN HỆ CHÚNG TÔI",
+    "phone": "SỐ ĐIỆN THOẠI",
+    "email": "EMAIL",
+    "address": "ĐỊA CHỈ"
+  }
+}

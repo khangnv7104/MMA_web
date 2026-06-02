@@ -403,6 +403,11 @@ p, span, a, li {
   overflow-wrap: break-word;
 }
 
+/* Lead text spacing */
+.lead {
+  margin-bottom: 5px !important;
+}
+
 /* Card responsive */
 .card {
   width: 100%;
@@ -419,6 +424,129 @@ p, span, a, li {
   }
   .ml-auto {
     margin-left: auto;
+  }
+}
+/* Language Switcher Styles */
+.language-switcher {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.lang-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a31919 0%, #b74c4c 100%);
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.lang-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(163, 25, 25, 0.3);
+}
+
+.lang-toggle:active {
+  transform: scale(0.95);
+}
+
+.lang-flag {
+  font-size: 32px;
+  display: block;
+}
+
+.lang-menu {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 200px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.lang-option:hover {
+  background: #f5f5f5;
+}
+
+.lang-option.active {
+  background: linear-gradient(135deg, #a31919 0%, #b74c4c 100%);
+  color: white;
+}
+
+.lang-name {
+  flex: 1;
+}
+
+.lang-code {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.lang-option.active .lang-code {
+  opacity: 0.9;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .language-switcher {
+    bottom: 20px;
+    right: 20px;
+  }
+  .lang-toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  .lang-flag {
+    font-size: 26px;
+  }
+  .lang-menu {
+    min-width: 180px;
+    bottom: 70px;
+  }
+  .lang-option {
+    padding: 10px 14px;
+    font-size: 13px;
   }
 }
 .navbar-nav li {

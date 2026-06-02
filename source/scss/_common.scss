@@ -390,6 +390,11 @@ p, span, a, li {
   overflow-wrap: break-word;
 }
 
+/* Lead text spacing */
+.lead {
+  margin-bottom: 5px !important;
+}
+
 /* Card responsive */
 .card {
   width: 100%;

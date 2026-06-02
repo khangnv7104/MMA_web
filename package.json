@@ -4,7 +4,7 @@
   "description": "gymfit free bootstrap gym website template",
   "author": "Themefisher",
   "license": "MIT",
- "scripts": {
+  "scripts": {
     "dev": "gulp",
     "build": "gulp build",
     "download": "gulp download",
@@ -22,6 +22,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "i18next": "^26.3.0",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "i18next-http-backend": "^4.0.0",
     "jshint": "^2.13.6",
     "jshint-stylish": "^2.2.1",
     "sass": "^1.54.0"

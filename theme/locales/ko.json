@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "services": "서비스",
+    "courses": "코스",
+    "blog": "블로그",
+    "contact": "연락처"
+  },
+  "hero": {
+    "title": "목표를 달성하세요",
+    "subtitle": "최고의 장비를 갖춘 현대식 짐",
+    "cta": "참여하기"
+  },
+  "intro": {
+    "equipmentTitle": "현대식 장비",
+    "equipmentDesc": "깔끔하게 정돈된 공간에 고품질 장비를 갖춰 다양한 방식의 훈련이 가능합니다.",
+    "coachTitle": "전문 코치",
+    "coachDesc": "헌신적이고 규율 있는 무술 전문가가 훈련 내내 함께합니다.",
+    "nutritionTitle": "건강한 영양",
+    "nutritionDesc": "지속 가능한 훈련 성과를 돕는 과학적인 영양 관리.",
+    "learnMore": "더 보기"
+  },
+  "cta": {
+    "subhead": "잠재력을 깨우세요",
+    "title": "지금 등록하고 무료 훈련 세션을 받으세요",
+    "button": "지금 참여"
+  },
+  "services": {
+    "title": "우리의 서비스",
+    "description": "주당 20개 이상의 그룹 훈련 세션, 기술 클래스에서 지구력 및 피트니스 훈련 클래스까지.",
+    "mmaTraining": "MMA 훈련",
+    "mmaDesc": "기술, 지구력 및 전투 정신의 포괄적인 훈련.",
+    "boxing": "권투 & 스트라이킹",
+    "boxingDesc": "속도, 반사 신경 및 타격력을 개발하세요.",
+    "muayThai": "무에타이",
+    "muayDesc": "각 타격을 통해 훈련과 기술을 배우세요.",
+    "strength": "근력 & 컨디셔닝",
+    "strengthDesc": "격투기 및 경쟁을 위한 강한 기초를 구축하세요.",
+    "weightTraining": "웨이트 트레이닝",
+    "weightDesc": "핵심 강도를 높이고 훈련 성능을 향상시키세요.",
+    "fightConditioning": "파이트 컨디셔닝",
+    "fightDesc": "실제 전투 체력과 지구력을 향상시키세요."
+  },
+  "courses": {
+    "title": "우리의 코스"
+  },
+  "contact": {
+    "title": "연락 주세요",
+    "phone": "전화",
+    "email": "이메일",
+    "address": "주소"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "services": "SERVICES",
+    "courses": "COURSES",
+    "blog": "BLOG",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "title": "ACHIEVE YOUR GOALS",
+    "subtitle": "Modern gym with the best equipment",
+    "cta": "JOIN"
+  },
+  "intro": {
+    "equipmentTitle": "Modern Equipment",
+    "equipmentDesc": "A clean, well-organized space equipped with quality gear for flexible training styles.",
+    "coachTitle": "Professional Coaches",
+    "coachDesc": "Dedicated coaches with discipline and martial arts knowledge to guide you through every step.",
+    "nutritionTitle": "Healthy Nutrition",
+    "nutritionDesc": "Science-based nutrition that supports sustainable training progress.",
+    "learnMore": "Learn more"
+  },
+  "cta": {
+    "subhead": "Unlock your potential",
+    "title": "Sign up now to get a free training session",
+    "button": "Join now"
+  },
+  "services": {
+    "title": "OUR SERVICES",
+    "description": "Over 20 group training sessions per week, from skill classes to endurance and fitness training classes.",
+    "mmaTraining": "MMA TRAINING",
+    "mmaDesc": "Comprehensive training in technique, endurance and fighting spirit.",
+    "boxing": "BOXING & STRIKING",
+    "boxingDesc": "Develop speed, reflexes and striking power.",
+    "muayThai": "MUAY THAI",
+    "muayDesc": "Learn discipline and skill through each strike.",
+    "strength": "STRENGTH & CONDITIONING",
+    "strengthDesc": "Build a strong foundation for martial arts and competition.",
+    "weightTraining": "WEIGHT TRAINING",
+    "weightDesc": "Increase core strength, enhance training performance.",
+    "fightConditioning": "FIGHT CONDITIONING",
+    "fightDesc": "Improve real combat fitness and endurance."
+  },
+  "courses": {
+    "title": "OUR COURSES"
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "phone": "PHONE",
+    "email": "EMAIL",
+    "address": "ADDRESS"
+  }
+}

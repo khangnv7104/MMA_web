@@ -21,6 +21,7 @@ var path = {
     plugins: "source/plugins/**/*",
     js: "source/js/*.js",
     scss: "source/scss/**/*.scss",
+    locales: "source/locales/**/*",
     images: "source/images/**/*.+(png|jpg|jpeg|gif|svg|webp|ico)",
     blur: "source/images/**/*.+(jpg|jpeg|webp)",
     fonts: "source/fonts/**/*.+(eot|ttf|woff|woff2|otf)",
@@ -168,6 +169,11 @@ gulp.task("static", function () {
   return gulp.src(path.src.static).pipe(gulp.dest(path.build.dir));
 });
 
+// locales
+gulp.task("locales", function () {
+  return gulp.src(path.src.locales).pipe(gulp.dest(path.build.dir + "locales/"));
+});
+
 // Clean Theme Folder
 gulp.task("clean", function (cb) {
   rimraf("./theme", cb);
@@ -179,6 +185,7 @@ gulp.task("watch", function () {
   gulp.watch(path.src.htminc, gulp.series("html"));
   gulp.watch(path.src.scss, gulp.series("scss"));
   gulp.watch(path.src.js, gulp.series("js"));
+  gulp.watch(path.src.locales, gulp.series("locales"));
   gulp.watch(path.src.images, gulp.series("images"));
   gulp.watch(path.src.fonts, gulp.series("fonts"));
   gulp.watch(path.src.plugins, gulp.series("plugins"));
@@ -192,6 +199,7 @@ gulp.task(
     "html",
     "js",
     "scss",
+    "locales",
     "images",
     "fonts",
     "plugins",
@@ -214,6 +222,7 @@ gulp.task(
     "html",
     "js",
     "scss",
+    "locales",
     "images",
     "fonts",
     "plugins",
@@ -229,6 +238,7 @@ gulp.task(
     "html",
     "js",
     "scss",
+    "locales",
     "scss-files",
     "images",
     "images-blur",
@@ -241,5 +251,5 @@ gulp.task(
 // Deploy Task
 gulp.task(
   "deploy",
-  gulp.series("html", "js", "scss", "images", "fonts", "plugins", "static")
+  gulp.series("html", "js", "scss", "locales", "images", "fonts", "plugins", "static")
 );
