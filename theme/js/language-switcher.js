@@ -27,6 +27,26 @@
     return null;
   };
 
+  // Helper to set cookie cleanly and clear old duplicates
+  const setGoogtransCookie = (lang) => {
+    const cookieValue = "/vi/" + lang;
+    
+    // Clear old versions of this cookie to avoid domain conflicts (e.g. .domain.com vs domain.com)
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + location.hostname;
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + location.hostname;
+    
+    const hostParts = location.hostname.split(".");
+    if (hostParts.length > 2) {
+      const rootDomain = hostParts.slice(-2).join(".");
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + rootDomain;
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + rootDomain;
+    }
+
+    // Write single clean cookie
+    document.cookie = "googtrans=" + cookieValue + "; path=/;";
+  };
+
   // Sync current language from cookie or localStorage
   let currentLang = localStorage.getItem("selectedLanguage") || "vi";
   const googtrans = getCookie("googtrans");
@@ -105,11 +125,8 @@
     localStorage.setItem("selectedLanguage", lang);
     document.documentElement.lang = lang;
     
-    // Set googtrans cookie for domain-wide automatic translation persistence
-    const cookieValue = "/vi/" + lang;
-    document.cookie = "googtrans=" + cookieValue + "; path=/";
-    document.cookie = "googtrans=" + cookieValue + "; path=/; domain=" + location.hostname;
-    document.cookie = "googtrans=" + cookieValue + "; path=/; domain=." + location.hostname;
+    // Set cookie cleanly
+    setGoogtransCookie(lang);
     
     // Reload the page once to apply the new translation immediately
     window.location.reload();
